@@ -1,0 +1,12 @@
+{
+  "prefix": "A!",
+  "bot_info": {
+    "name": "Academic Forum Bot",
+    "version": "1.0.0"
+  },
+  "MAX_PLAYLIST_SIZE": 9999999,
+  "PRUNING": false,
+  "STAY_TIME": 9999999,
+  "DEFAULT_VOLUME": 50,
+  "LOCALE": "en"
+}
