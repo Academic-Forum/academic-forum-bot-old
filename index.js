@@ -26,19 +26,6 @@ client.once('ready', () => {
   console.log('Ready!');
 });
 
-var failsafeSend = (message, sendpriv, sendpub) => {
-  message.author
-    .send(sendpriv)
-    .catch((_) =>
-      message.guild.channels.cache
-        .find((i) => i.name === 'general')
-        .send(
-          sendpub +
-            ` (This message was sent here because you only accept direct messages from friends.)`
-        )
-    );
-};
-
 // client.on('messageUpdate', (oldMessage, newMessage) => {
 //   if (oldMessage.channel.name.toLowerCase() != 'counting') return;
 //   if (oldMessage.content == newMessage.content) return;
