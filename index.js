@@ -54,6 +54,9 @@ client.on('message', async (message) => {
   // WARNING: This must be at the top of this function.
   // NO lines of code should exist above this.
   // do not edit anything inside this block without prior permission from Ved Thiru (PerpetualCreativity)
+
+  // Counting enforcement disabled, because it's handled by the rust bot now
+  /*
   console.log(message.channel.type);
   const timer = (ms) => new Promise((res) => setTimeout(res, ms));
   if (
@@ -97,6 +100,7 @@ client.on('message', async (message) => {
     console.log('not a counting message');
   }
   // }}} counting enforcement
+  */
 
   // return if message is not for the bot, or by another bot
   if (!message.content.startsWith(prefix) || message.author.bot) return;
